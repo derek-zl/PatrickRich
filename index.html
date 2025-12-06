@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">PatrickRich株式会社 - Buddhist Amulets & Culture</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Hero Section Specific Styles */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/hero_bg.png');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Featured Products */
+        .featured-products {
+            background-color: var(--white);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background-color: var(--bg-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Intro Section */
+        .intro-section {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .intro-image {
+            flex: 1;
+        }
+
+        .intro-image img {
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-text {
+            flex: 1;
+        }
+
+        .intro-text h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .intro-text p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .intro-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span data-i18n="logo_text"> PatrickRich</span> <span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li>
+                        <select id="language-selector" class="language-selector">
+                            <option value="en">English</option>
+                            <option value="zh">中文</option>
+                            <option value="ja">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 data-i18n="hero_title">Spreading Buddhist Culture, Connecting with Believers</h1>
+            <p data-i18n="hero_desc">Selected Thai temple amulets and Buddhist peripherals to bring you blessings and
+                peace.</p>
+            <a href="products.html" class="btn" data-i18n="btn_view_products">View Products</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <div class="container">
+            <div class="intro-section">
+                <div class="intro-image">
+                    <img src="assets/images/hero_bg.png" alt="Buddhist Culture">
+                </div>
+                <div class="intro-text">
+                    <h2 data-i18n="intro_title">About Us</h2>
+                    <p data-i18n="intro_p1">PatrickRich株式会社 is dedicated to spreading authentic Buddhist culture. We
+                        directly invite amulets from major temples in Thailand to ensure that every amulet has a pure
+                        source and complete blessing power.</p>
+                    <p data-i18n="intro_p2">We do more than just sales; we pass on culture and faith. Whether you are
+                        looking for spiritual sustenance or hoping to improve your fortune, there is a sacred object
+                        here for you.</p>
+                    <a href="about.html" class="btn" data-i18n="btn_learn_more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section featured-products">
+        <div class="container">
+            <h2 class="text-center" style="color: var(--primary-color); margin-bottom: 10px;"
+                data-i18n="featured_title">Featured Sacred Objects</h2>
+            <p class="text-center" style="margin-bottom: 40px;" data-i18n="featured_subtitle">Master Blessed,
+                Spiritually Efficacious</p>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG395.jpg" alt="Somdej">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_1_name">Somdej Amulet</h3>
+                        <!-- <span class="price" data-i18n="product_1_price">¥ 1,288</span>
+                        <a href="products.html" class="btn" data-i18n="btn_view_details">View Details</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG398.jpg" alt="Phra Pidta">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_2_name">Phra Pidta (Closed Eyes)</h3>
+                        <!-- <span class="price" data-i18n="product_2_price">¥ 888</span>
+                        <a href="products.html" class="btn" data-i18n="btn_view_details">View Details</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG400.jpg" alt="Phra Phrom">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_3_name">Phra Phrom (Four-Faced God)</h3>
+                        <!-- <span class="price" data-i18n="product_3_price">¥ 2,688</span>
+                        <a href="products.html" class="btn" data-i18n="btn_view_details">View Details</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="products.html" class="btn" data-i18n="btn_view_all">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="logo_text">PatrickRich株式会社</h3>
+                    <p data-i18n="footer_desc">Spreading positive energy, promoting truth, kindness, and beauty. May
+                        everyone who connects with us be peaceful, joyful, and successful.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer_links">Quick Links</h3>
+                    <ul style="line-height: 2;">
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                        <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer_contact">Contact Us</h3>
+                    <p data-i18n="footer_address">Address: 88 Buddhist Culture St, District, City, Province, China</p>
+                    <p data-i18n="footer_phone">Phone: 123-4567-8901</p>
+                    <p data-i18n="footer_email">Email: contact@foyuan.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">&copy; 2024 PatrickRich株式会社. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

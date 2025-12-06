@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_about_title">About Us - PatrickRich株式会社</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .about-content {
+            background-color: var(--white);
+            padding: 60px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .mission-values {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background-color: var(--bg-color);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .value-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span data-i18n="logo_text">PatrickRich株式会社</span> <span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" class="active" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li>
+                        <select id="language-selector" class="language-selector">
+                            <option value="en">English</option>
+                            <option value="zh">中文</option>
+                            <option value="ja">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="page_about_title">About Us</h1>
+            <p data-i18n="page_about_subtitle">Inheriting Millennium Buddhist Culture, Spreading Good Karma</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/images/hero_bg.png" alt="PatrickRich株式会社"
+                        style="border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                </div>
+                <div class="about-text">
+                    <h2 data-i18n="about_main_title">About PatrickRich株式会社</h2>
+                    <p data-i18n="about_p1">Founded in 2024, PatrickRich株式会社 is a professional institution focused on
+                        Thai temple amulets and Buddhist culture dissemination. We adhere to the concept of 'Right
+                        Faith, Right Mindfulness, Right Action' and are committed to providing believers with pure and
+                        blessed Buddhist sacred objects.</p>
+                    <p data-i18n="about_p2">Over the years, we have visited major temples and high monks in Thailand
+                        many times, establishing deep connections. Every amulet is personally invited by us to ensure
+                        authenticity, so believers can wear them with peace of mind.</p>
+                    <p data-i18n="about_p3">In addition to amulet sales, we are also committed to promoting Buddhist
+                        culture, regularly holding various charity activities, advocating doing good deeds, and giving
+                        back to society.</p>
+                </div>
+            </div>
+
+            <div class="mission-values">
+                <h2 style="color: var(--primary-color);" data-i18n="mission_title">Our Mission & Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3 data-i18n="value_1_title">Authenticity Guarantee</h3>
+                        <p data-i18n="value_1_desc">All sacred objects are invited directly from regular Thai temples.
+                            Original temple invitation, 10x compensation for fakes.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3 data-i18n="value_2_title">Professional Service</h3>
+                        <p data-i18n="value_2_desc">We have a professional amulet knowledge team to provide you with
+                            one-on-one consultation and purchasing advice.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3 data-i18n="value_3_title">Spreading Good Karma</h3>
+                        <p data-i18n="value_3_desc">Connecting through Buddhism, treating people with sincerity, may
+                            every believer find a spiritual home here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="logo_text">PatrickRich株式会社</h3>
+                    <p data-i18n="footer_desc">Spreading positive energy, promoting truth, kindness, and beauty. May
+                        everyone who connects with us be peaceful, joyful, and successful.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer_links">Quick Links</h3>
+                    <ul style="line-height: 2;">
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                        <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer_contact">Contact Us</h3>
+                    <p data-i18n="footer_address">Address: 88 Buddhist Culture St, District, City, Province, China</p>
+                    <p data-i18n="footer_phone">Phone: 123-4567-8901</p>
+                    <p data-i18n="footer_email">Email: contact@foyuan.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">&copy; 2024 PatrickRich株式会社. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

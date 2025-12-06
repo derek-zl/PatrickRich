@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_products_title">Products - PatrickRich株式会社</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .products-section {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+
+        .category-filter {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .category-btn {
+            background: none;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 8px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .category-btn.active,
+        .category-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: var(--bg-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span data-i18n="logo_text">PatrickRich株式会社</span> <span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="products.html" class="active" data-i18n="nav_products">Products</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li>
+                        <select id="language-selector" class="language-selector">
+                            <option value="en">English</option>
+                            <option value="zh">中文</option>
+                            <option value="ja">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="page_products_title">Our Products</h1>
+            <p data-i18n="page_products_subtitle">Selected Amulets & Peripherals for Your Faith Needs</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <!-- <div class="category-filter">
+                <button class="category-btn active" data-i18n="filter_all">All</button>
+                <button class="category-btn" data-i18n="filter_amulets">Amulets</button>
+                <button class="category-btn" data-i18n="filter_statues">Statues</button>
+                <button class="category-btn" data-i18n="filter_peripherals">Peripherals</button>
+            </div> -->
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG395.jpg" alt="Somdej">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_1_name">Somdej Amulet</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_1_desc">
+                            Protection, Career, Wealth</p>
+                        <!-- <span class="price" data-i18n="product_1_price">¥ 1,288</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG398.jpg" alt="Phra Pidta">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_2_name">Phra Pidta (Closed Eyes)</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_2_desc">Avoid
+                            Villains, Ward off Danger</p>
+                        <!-- <span class="price" data-i18n="product_2_price">¥ 888</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG400.jpg" alt="Phra Phrom">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_3_name">Phra Phrom (Four-Faced God)</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_3_desc">Wish
+                            Fulfilling, All-round Protection</p>
+                        <!-- <span class="price" data-i18n="product_3_price">¥ 2,688</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG402.jpg" alt="Ganesha">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_4_name">Ganesha (God of Wisdom)</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_4_desc">
+                            Wisdom, Academic Success, Wealth</p>
+                        <!-- <span class="price" data-i18n="product_4_price">¥ 1,688</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG415.jpg" alt="Mala Beads">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_5_name">Agarwood Mala Beads</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_5_desc">
+                            Cultivate Character, Soothe the Mind</p>
+                        <!-- <span class="price" data-i18n="product_5_price">¥ 588</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG405.jpg" alt="Incense Burner">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_6_name">Pure Copper Lotus Incense Burner</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_6_desc">For
+                            Offerings, Solemn and Sacred</p>
+                        <!-- <span class="price" data-i18n="product_6_price">¥ 388</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG409.jpg" alt="Incense Burner">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_7_name">Pure Copper Lotus Incense Burner</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_7_desc">For
+                            Offerings, Solemn and Sacred</p>
+                        <!-- <span class="price" data-i18n="product_6_price">¥ 388</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG411.jpg" alt="Incense Burner">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_8_name">Pure Copper Lotus Incense Burner</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_8_desc">For
+                            Offerings, Solemn and Sacred</p>
+                        <!-- <span class="price" data-i18n="product_6_price">¥ 388</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/WechatIMG413.jpg" alt="Incense Burner">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="product_9_name">Pure Copper Lotus Incense Burner</h3>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;" data-i18n="product_9_desc">For
+                            Offerings, Solemn and Sacred</p>
+                        <!-- <span class="price" data-i18n="product_6_price">¥ 388</span>
+                        <a href="#" class="btn" data-i18n="btn_consult">Consult to Buy</a> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="logo_text">PatrickRich株式会社</h3>
+                    <p data-i18n="footer_desc">Spreading positive energy, promoting truth, kindness, and beauty. May
+                        everyone who connects with us be peaceful, joyful, and successful.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer_links">Quick Links</h3>
+                    <ul style="line-height: 2;">
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                        <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer_contact">Contact Us</h3>
+                    <p data-i18n="footer_address">Address: 88 Buddhist Culture St, District, City, Province, China</p>
+                    <p data-i18n="footer_phone">Phone: 123-4567-8901</p>
+                    <p data-i18n="footer_email">Email: contact@foyuan.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">&copy; 2024 PatrickRich株式会社. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
