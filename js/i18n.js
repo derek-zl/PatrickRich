@@ -78,6 +78,14 @@ const translations = {
         "product_9_desc": "Every Wish Granted · Dreams Come True · Complete Divine Protection",
         "product_9_price": "¥ 388",
 
+        "product_10_name": "",
+        "product_10_desc": "",
+        "product_10_price": "¥ 388",
+
+        "product_11_name": "",
+        "product_11_desc": "",
+        "product_11_price": "¥ 388",
+
         "btn_consult": "Consult to Buy",
 
         // Contact Page
@@ -91,6 +99,7 @@ const translations = {
         "contact_hours_title": "Business Hours",
         "contact_hours_val": "Mon - Sun: 09:00 - 18:00",
         "contact_wechat_title": "WeChat",
+        "contact_line_title": "Line",
         "form_title": "Online Message",
         "label_name": "Your Name",
         "label_email": "Email",
@@ -177,6 +186,14 @@ const translations = {
         "product_9_desc": "有求必应 心想事成 全方位庇护",
         "product_9_price": "¥ 388",
 
+        "product_10_name": "",
+        "product_10_desc": "",
+        "product_10_price": "¥ 388",
+
+        "product_11_name": "",
+        "product_11_desc": "",
+        "product_11_price": "¥ 388",
+
         "btn_consult": "咨询购买",
 
         // Contact Page
@@ -190,6 +207,7 @@ const translations = {
         "contact_hours_title": "营业时间",
         "contact_hours_val": "周一至周日：09:00 - 18:00",
         "contact_wechat_title": "微信",
+        "contact_line_title": "Line",
         "form_title": "在线留言",
         "label_name": "您的姓名",
         "label_email": "电子邮箱",
@@ -276,6 +294,14 @@ const translations = {
         "product_9_desc": "有求必応(ゆうきゅうひおう) · 心願成就(しんがんじょうじゅ) · 全方位守護(ぜんほういしゅご)",
         "product_9_price": "¥ 388",
 
+        "product_10_name": "",
+        "product_10_desc": "",
+        "product_10_price": "¥ 388",
+
+        "product_11_name": "",
+        "product_11_desc": "",
+        "product_11_price": "¥ 388",
+
 
         "btn_consult": "購入相談",
 
@@ -290,6 +316,7 @@ const translations = {
         "contact_hours_title": "営業時間",
         "contact_hours_val": "月〜日：09:00 - 18:00",
         "contact_wechat_title": "WeChat",
+        "contact_line_title": "LINE",
         "form_title": "オンラインメッセージ",
         "label_name": "お名前",
         "label_email": "メールアドレス",
