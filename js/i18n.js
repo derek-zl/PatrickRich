@@ -78,12 +78,12 @@ const translations = {
         "product_9_desc": "Every Wish Granted · Dreams Come True · Complete Divine Protection",
         "product_9_price": "¥ 388",
 
-        "product_10_name": "",
-        "product_10_desc": "",
+        "product_10_name": "Jatukam Ramathep",
+        "product_10_desc": "Wealth Guard · Prosperity · Evil Dispelling · Career Boost · Anti-Backstabber",
         "product_10_price": "¥ 388",
 
-        "product_11_name": "",
-        "product_11_desc": "",
+        "product_11_name": "Thailand’s No.1 Phra Phrom – Pure Gold Edition",
+        "product_11_desc": "Symbol of Fortune • Protection • Authority • All Wishes Granted",
         "product_11_price": "¥ 388",
 
         "btn_consult": "Consult to Buy",
@@ -186,12 +186,12 @@ const translations = {
         "product_9_desc": "有求必应 心想事成 全方位庇护",
         "product_9_price": "¥ 388",
 
-        "product_10_name": "",
-        "product_10_desc": "",
+        "product_10_name": "泽度金",
+        "product_10_desc": "守财 · 招财 · 辟邪 · 事业 · 防小人",
         "product_10_price": "¥ 388",
 
-        "product_11_name": "",
-        "product_11_desc": "",
+        "product_11_name": "全泰第一四面神 纯金版本",
+        "product_11_desc": "提升财运 · 强效守护 · 心愿达成",
         "product_11_price": "¥ 388",
 
         "btn_consult": "咨询购买",
@@ -294,12 +294,12 @@ const translations = {
         "product_9_desc": "有求必応(ゆうきゅうひおう) · 心願成就(しんがんじょうじゅ) · 全方位守護(ぜんほういしゅご)",
         "product_9_price": "¥ 388",
 
-        "product_10_name": "",
-        "product_10_desc": "",
+        "product_10_name": "ジャトゥカム・ラマテープ",
+        "product_10_desc": "守財 ・ 招財 ・ 厄除け ・ 仕事運 ・ 小人（妨害）対策",
         "product_10_price": "¥ 388",
 
-        "product_11_name": "",
-        "product_11_desc": "",
+        "product_11_name": "タイ国内 No.1 四面神 ― 純金特別版",
+        "product_11_desc": "金運上昇・強力守護・願望成就",
         "product_11_price": "¥ 388",
 
 
